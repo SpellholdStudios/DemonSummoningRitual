@@ -1,0 +1,23 @@
+@0 = ~Rituale_di_evocazione_demoniaca-WeiDU~
+@101 = ~Questo componente non e disponibile per il tuo gioco.~
+
+@9001 =~[Uu]tilizzabile[ %tab%]+[Da]a[ %tab%]*:~
+@9002 =~[Nn]on[ %tab%]+[Uu]tilizzabile[ %tab%]+[Da]a[ %tab%]*:~
+
+@11 = ~Strano libro~
+@12 = ~Rituale di Apertura dell’Empio Portale~
+@13 = ~La grafia sulle pagine di questo libro brilla di una raccapricciante luce rossa. Tutto ciò ti fa pensare che questo oggetto deve avere grandi poteri.~
+@14 = ~Questo libro é irradiato da un’oscura e potente magia. E’ stato scritto con il sangue di un Demone in un linguaggio arcano ed é in grado (se l’iscrizione é vera) di stabilire un collegamento tra il primo piano materiale ed i piani demoniaci esterni, e quindi di evocare diversi tipi di demoni, che andranno subito su tutte le furie, seccati di essere stati evocati nei piani primari. C’è un post scriptum alla fine del libro che avvisa gli evocatori della possibilità che il portale potrebbe aprirsi attraverso il corpo del mago, causandogli immediatamente la morte a meno che a lui/lei non riesce un tiro salvezza contro incantesimi. L’uso del rituale richiede una considerevole forza di volontà così solo chi ha una saggezza pari o superiore a 16 può usarlo.
+
+Abilità Speciali:
+Evoca un demone una volta al giorno per 15 round.
+
+Richiede: 16 alla Saggezza
+Peso: 2
+
+Utilizzabile da: 
+ Mago
+ Chierico
+ Con allineamento non buono~
+
+@21 = ~Cornugon~

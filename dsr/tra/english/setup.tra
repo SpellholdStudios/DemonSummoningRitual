@@ -1,0 +1,23 @@
+@9001 = ~[Oo]nly[ %tab%]+[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+@9002 = ~[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+
+@0 = ~Demon-summoning ritual (WeiDU)~
+@1 = ~This mod is not available for your game.~
+
+@11 = ~Strange book~
+@12 = ~Unholy Gate Opening Ritual~
+@13 = ~The writings on the pages of this book glow with a creepy red light. This item must have great power as you can suspect.~
+@14 = ~This book radiates with dark and powerful magic. It was written with demon blood in the language of the high arcane and it is capable (if the inscription is true) of establishing a channel between the prime material plane and the outer demonic planes, summoning several types of demons, who will go rampage instantly, annoyed by being summoned to the primes. There is a post scriptum at the end of the booklet which warns the summoner of the possibility that the planar gate could open through the body of the wizard, causing instant death unless he/she rolls successful save vs. spells. The usage of the ritual requires considerable will power so only the ones with 16 or more wisdom can use it.
+
+Special Abilities:
+- Summons a demon once per day for 15 rounds.
+
+Requires: 16 Wisdom
+Weight: 2
+
+Usable By: 
+ Mage
+ Cleric
+ With non-good alignment~
+
+@21 = ~Cornugon~
