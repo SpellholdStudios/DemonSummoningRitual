@@ -1,0 +1,54 @@
+IF
+	OR(3)
+		See([GOODCUTOFF.0.0.CLERIC_ALL])
+		See([GOODCUTOFF.0.0.MAGE_ALL])
+		See(NearestEnemyOf(Myself))
+	Global("prep","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_AGANNAZAR_SCORCHER)
+		SetGlobal("prep","LOCALS",1)
+END
+
+IF
+	See([GOODCUTOFF])
+	Global("prep","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_AGANNAZAR_SCORCHER)
+		SetGlobal("prep","LOCALS",1)
+END
+
+IF
+	See([GOODCUTOFF])
+THEN
+	RESPONSE #10
+		ForceSpell(LastSeenBy(Myself),WIZARD_SYMBOL_FEAR)
+		AttackOneRound(LastSeenBy(Myself))
+	RESPONSE #20
+		ForceSpell(LastSeenBy(Myself),WIZARD_LIGHTNING_BOLT)
+		AttackOneRound(LastSeenBy(Myself))
+	RESPONSE #70
+		AttackOneRound(LastSeenBy(Myself))
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	See([ANYONE])
+	Global("WizardLightningBolt","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(LastSeenBy(Myself),WIZARD_LIGHTNING_BOLT)
+		SetGlobal("WizardLightningBolt","LOCALS",1)
+END
+
+IF
+	See([ANYONE])
+THEN
+	RESPONSE #10
+		ForceSpell(LastSeenBy(Myself),WIZARD_SYMBOL_FEAR)
+	RESPONSE #20
+		ForceSpell(LastSeenBy(Myself),WIZARD_LIGHTNING_BOLT)
+	RESPONSE #70
+		AttackReevaluate(LastSeenBy(Myself),30)
+END
