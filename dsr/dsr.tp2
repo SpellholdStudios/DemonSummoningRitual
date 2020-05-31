@@ -12,14 +12,13 @@ ALWAYS
 	/* Converts tra files to UTF-8 */
 	ACTION_DEFINE_ARRAY tin_reload BEGIN setup.tra END
 	ACTION_DEFINE_ARRAY tin_noconvert BEGIN END
-		LAF HANDLE_CHARSETS
-			INT_VAR
+	LAF HANDLE_CHARSETS
+		INT_VAR
 			infer_charsets = 1
-			STR_VAR
+		STR_VAR
 			tra_path = EVAL ~%MOD_FOLDER%/lang~
 			noconvert_array = tin_noconvert
 			reload_array = tin_reload
-		END
 	END
 
 	/* Loads in any shared functions library (general macros and functions) */
