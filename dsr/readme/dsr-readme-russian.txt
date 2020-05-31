@@ -27,30 +27,29 @@ Version 8.0.0 (, 2019)
 - Updated French and English translations (Gwendolyne).
 - Updated WeiDU installer to v246.
 
-Version 7 (10 October 2018)
-- Added BG2EE compatibility by Deratiseur
+Version 7 (October 10, 2018)
+- Added native BG2EE compatibility by Deratiseur.
 
-Version 6 (24 October 2009)
-- tolger2.cre is patched, now
-- Added German translation by Jarl
-- Changed to README command
-- Updated WeiDU installer to v211
+Version 6 (October 24, 2009)
+- tolger2.cre is patched, now.
+- Added German translation by Jarl.
+- Changed to `README` command.
+- Updated WeiDU installer to v211.
 
-Version 5 (09 April 2009)
-- Fixed COMPILE command
-- Added VERSION flag
-- Updated WeiDU installer to v210
+Version 5 (April 9, 2009)
+- Fixed `COMPILE` command.
+- Added `VERSION` flag.
+- Updated WeiDU installer to v210.
 
-Version 4 (17 May 2008)
-- Added Italian translation by Ilot (thank you!!!)
+Version 4 (May 17, 2008)
+- Added Italian translation by Ilot (thank you!!!).
 
-Version 3 (14 May 2008)
-- Added French translation by Deratiseur (thank you!!!)
+Version 3 (May 14, 2008)
+- Added French translation by Deratiseur (thank you!!!).
 
-Version 2 (08 January 2007)
-- WeiDU-conversion by Badgert
-- Added Russian translation by www.aerie.ru
+Version 2 (January 8, 2007)
+- WeiDU conversion by Badgert.
+- Added Russian translation by www.aerie.ru.
 
 Version 1
 - Initial release
-
