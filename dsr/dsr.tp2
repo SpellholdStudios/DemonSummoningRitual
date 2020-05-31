@@ -1,53 +1,53 @@
-BACKUP ~dsr/backup~        
-//AUTHOR ~TIN, Badgert (WeiDU conversion)~ 
-SUPPORT ~~
+BACKUP ~dsr/backup~
+//AUTHOR ~TIN, Badgert (WeiDU conversion)~
+SUPPORT ~Spellhold Studios at http://www.shsforums.net/forum/127-mod-resurrections/~
 
 VERSION ~v8.0.0~
 
-README ~dsr/readme/dsr-readme-%%.txt~ ~dsr/readme/dsr-readme-english.txt~
+README ~dsr/readme/dsr-readme-%LANGUAGE%.txt~ ~dsr/readme/dsr-readme-english.txt~
 
 
 ALWAYS
 
 	/* Converts tra files to UTF-8 */
-	ACTION_DEFINE_ARRAY xo_reload BEGIN setup.tra END
-	ACTION_DEFINE_ARRAY xo_noconvert BEGIN END
+	ACTION_DEFINE_ARRAY tin_reload BEGIN setup.tra END
+	ACTION_DEFINE_ARRAY tin_noconvert BEGIN END
 		LAF HANDLE_CHARSETS
 			INT_VAR
-			infer_charset = 1
+			infer_charsets = 1
 			STR_VAR
-			tra_path = EVAL ~%MOD_FOLDER%/tra~
-			noconvert_array = xo_noconvert
-			reload_array = xo_reload
+			tra_path = EVAL ~%MOD_FOLDER%/lang~
+			noconvert_array = tin_noconvert
+			reload_array = tin_reload
 		END
 	END
 
 	/* Loads in any shared functions library (general macros and functions) */
-	INCLUDE ~heartwood/lib/gw_functions.tpa~	// Loads macros and functions library dealing with tooltip appending and specific EE items descriptions.
+	INCLUDE ~dsr/lib/gw_functions.tpa~	// Loads macros and functions library dealing with tooltip appending and specific EE items descriptions.
 
 END
 
-AUTO_TRA ~dsr/tra/%s~
+AUTO_TRA ~dsr/lang/%s~
 
 LANGUAGE ~English~
 		 ~english~
-         ~dsr/tra/english/setup.tra~
+         ~dsr/lang/english/setup.tra~
 
-LANGUAGE ~Russian (aerie.ru)~
+LANGUAGE ~Russian (translation by aerie.ru)~
 		 ~russian~
-         ~dsr/tra/russian/setup.tra~
+         ~dsr/lang/russian/setup.tra~
 
-LANGUAGE ~Francais (par Deratiseur)~
+LANGUAGE ~Francais (traduction : Deratiseur)~
 		 ~french~
-         ~dsr/tra/french/setup.tra~ 
+         ~dsr/lang/french/setup.tra~
 
-LANGUAGE ~Italian (Ilot)~
+LANGUAGE ~Italiano (traduzione di ilot)~
 		 ~italian~
-         ~dsr/tra/italian/setup.tra~
+         ~dsr/lang/italian/setup.tra~
 
-LANGUAGE ~Deutsch (Jarl)~
+LANGUAGE ~Deutsch (Uebersetzung von Jarl)~
 		 ~german~
-         ~dsr/tra/german/setup.tra~
+         ~dsr/lang/german/setup.tra~
 
 
 /* ================================================================ *
@@ -55,14 +55,14 @@ LANGUAGE ~Deutsch (Jarl)~
  * ================================================================ */
 
 BEGIN @0
-DESIGNATED 0
+DESIGNATED 0 LABEL ~demon_summoning_ritual~
 REQUIRE_PREDICATE GAME_INCLUDES ~tob~ @1
 
 // Install items
-COPY ~dsr/itm/sumdem.itm~	~override~  
-	SAY NAME1 @11 
-	SAY NAME2 @12 
-	SAY UNIDENTIFIED_DESC @13 
+COPY ~dsr/itm/sumdem.itm~	~override~
+	SAY NAME1 @11
+	SAY NAME2 @12
+	SAY UNIDENTIFIED_DESC @13
 	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@14" END
 
 // Install creatures
@@ -95,13 +95,13 @@ COPY_EXISTING ~tolger2.cre~ ~override~
 		ADD_MEMORIZED_SPELL ~SPWI911~ #8 ~wizard~ (1)
 		ADD_CRE_ITEM ~SUMDEM~ #1 #0 #0 ~NONE~ ~QUIVER2~
 	END
-BUT_ONLY 
+BUT_ONLY
 
 COPY ~dsr/eff~ ~override~
 
 // Install scripts
 //COPY_EXISTING ~tolger.bcs~	~override/tolger.bcs~
-EXTEND_BOTTOM ~tolger.bcs~	~dsr/scripts/stolger.baf~ 
+EXTEND_BOTTOM ~tolger.bcs~	~dsr/scripts/stolger.baf~
 
 COMPILE ~dsr/baf~
 
