@@ -1,8 +1,8 @@
 @9001 = ~[Oo]nly[ %tab%]+[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
 @9002 = ~[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
 
-@0 = ~Demon-summoning ritual (WeiDU)~
-@1 = ~This mod is not available for your game.~
+@0  = ~Demon-summoning ritual (WeiDU)~
+@1  = ~You must have ToB, BGT, BG2:EE or EET installed to install Demon-summoning ritual.~
 
 @11 = ~Strange book~
 @12 = ~Unholy Gate Opening Ritual~

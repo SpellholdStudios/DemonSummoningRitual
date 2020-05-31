@@ -1,8 +1,8 @@
 @9001 = ~[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
 @9002 = ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
 
-@0 = ~Rituel de Convocation demoniaque - WeiDU~
-@1 = ~Ce mod n'est pas disponible pour votre jeu.~
+@0  = ~Rituel de Convocation demoniaque - WeiDU~
+@1  = ~Ce mod n'est pas disponible pour votre jeu.~
 
 
 @11 = ~Livre étrange~
@@ -11,8 +11,9 @@
 @14 = ~Ce livre irradie une sombre et puissante magie. Il a été écrit avec du sang de démon dans le langage des hautes arcanes et il est capable (si les inscriptions sont vraies) d’établir un canal entre le plan primaire et les plans inférieurs, en convoquant plusieurs types de démons, qui dévasteront immédiatement tout, ne supportant pas d’avoir été ainsi ramenés sur les plans primaires.
 À la fin de la brochure, un post-scriptum prévient l'invocateur de la possibilité que le portail s’ouvre au travers du corps du magicien, provoquant une mort instantanée, s’il/elle ne réussi pas un jet de sauvegarde contre les sorts. L’utilisation du rituel requiert une sagesse considérable, aussi seulement seuls ceux ayant une sagesse d’au minimum 16 peuvent l’utiliser.
 
-PARAMETRES :
+PARAMÈTRES :
 
+Capacité de charge :
 - Invoque un démon une fois par jour pendant 15 rounds.
 
 Sagesse requise : 16
