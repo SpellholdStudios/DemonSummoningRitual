@@ -48,6 +48,9 @@ LANGUAGE ~Deutsch (Uebersetzung von Jarl)~
 		 ~german~
          ~dsr/lang/german/setup.tra~
 
+LANGUAGE ~Chinese~
+		 ~schinese~
+         ~dsr/lang/schinese/setup.tra~
 
 /* ================================================================ *
  *    Demon Summoning Ritual - (Unholy Gate Opening Ritual Book)    *
